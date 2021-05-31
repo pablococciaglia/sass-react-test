@@ -1,0 +1,19 @@
+.header__title{
+    height: 32px;
+    left: 0px;
+    right: 325px;
+    font-family: "Daxline Pro 700";
+    font-size: 21px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $color-ui-casino-02;
+}
+
+
+.header__margin{
+    margin-left: 43px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__margin{margin-left: 7px;}
+}

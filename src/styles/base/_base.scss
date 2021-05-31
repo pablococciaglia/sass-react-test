@@ -1,0 +1,30 @@
+* {
+    body{ 
+        background-image: linear-gradient( to right , $background-grey-light, $background-grey-dark);
+    }
+
+    html,body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .mt7 {
+        margin-top: 7px;
+    }
+    .mb7 {
+        margin-bottom: 7px;
+    }
+    .mr7 {
+        margin-right: 7px;
+    }
+    .ml7 {
+        margin-left: 7px;
+    }
+    
+    hr {
+        width: 95%;
+        background: $color-ui-casino-02;
+        opacity: 0.12;
+        
+    }
+}

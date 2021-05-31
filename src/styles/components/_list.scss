@@ -1,0 +1,126 @@
+.list__list{
+    list-style:none;
+}
+
+.list__background{
+    cursor: pointer;
+    width: 432px;
+    height: 138px;
+    border-radius: 6px;
+}
+
+.list__background:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: rgba($color-casino-base,0.5);
+    list-style:none;
+    width: 432px;
+    height: 138px;
+    border-radius: 6px;
+    .list__button{display: inline;};
+    .list__textinfo{visibility: visible;}
+}
+
+.list__flexcontainer{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list__texttitle{
+    color: $color-ui-casino-02;
+    font-family: "Daxline Pro 700";
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 2px 0px;
+}
+
+.list__textcompany{
+    font-family: "Daxline Pro 500";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $color-ui-casino-03;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 2px 0px;
+}
+
+.list__textstake{
+    font-family: "Daxline Pro 500";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: $color-ui-casino-03;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 2px 0px;
+}
+
+.list__img{
+    width : 132px;
+    height : 96px;
+    border-radius : 5px;    
+    background: linear-gradient(180deg, rgba(26, 23, 30, 0.64) 0%, rgba(26, 23, 30, 0) 24.98%, rgba(26, 23, 30, 0) 74.94%, rgba(26, 23, 30, 0.64) 100%);
+}
+
+.list__button{
+    margin-left: auto;
+    display: none;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    height: 40px;
+    width: 64px;
+    font-family: "Daxline Pro 900";
+    font-size: 14px;
+    color: $color-ui-casino-01;
+    background-image: linear-gradient( to right , $button-green-light, $button-green-dark);
+    border: none;
+    border-radius: 4px;
+}
+
+.list__button:hover{
+    transition: 0.2s;
+    font-size: larger;
+}
+
+.list__textinfo{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: -34px;
+    font-family: "ll-icon-font";
+    font-size: 20px;
+    color: $color-ui-casino-01;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .list__button{display: inline;};
+    .list__textinfo{visibility: visible;};
+    .list__background:hover{background-color:transparent; };
+}
