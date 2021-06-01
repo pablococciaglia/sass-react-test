@@ -4,7 +4,7 @@ import { ListGames } from './ListGames'
 export const Games = ({select}) => {
     const [games, setgames] = useState([])
     
-    const getData = async () => {
+        const getData = async () => {
         const customData = require('../../assets/games.json')
         setgames(customData)  
     }
@@ -14,8 +14,7 @@ export const Games = ({select}) => {
     }
     , [])
 
-    
-     switch (select) {
+    switch (select) {
         case 'name': 
             games.sort((a,b)=>{
                 const wordA= a.title.toLowerCase();
@@ -25,24 +24,25 @@ export const Games = ({select}) => {
                 return 0;
             });
 
-             return (
-                    <ul>
-                        <ListGames games={games}/>        
-                    </ul> 
+            return (
+                <ul>
+                    <ListGames games={games}/>        
+                </ul> 
             );
             
     
         case 'stakemin':
-                games.sort((a,b)=>{
-                    if (a.minbet<b.minbet){return -1;}
-                    if (a.minbet>b.minbet){return 1;}
-                    return 0;
-                });
-             return (
+            games.sort((a,b)=>{
+                if (a.minbet<b.minbet){return -1;}
+                if (a.minbet>b.minbet){return 1;}
+                return 0;
+            });
+            
+            return (
                 <ul>
                     <ListGames games={games}/>        
                 </ul> 
-            ) ;
+            );
             
     
         case 'stakemax':
@@ -51,14 +51,16 @@ export const Games = ({select}) => {
                 if (a.minbet>b.minbet){return -1;}
                 return 0;
             });
-             return (
+            
+            return (
                 <ul>
                     <ListGames games={games}/>        
                 </ul> 
             );
     
         default:
-             return (
+            
+            return (
                 <ul>
                     <ListGames games={games}/>        
                 </ul> 

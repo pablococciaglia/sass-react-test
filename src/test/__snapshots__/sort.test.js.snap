@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test on Sort.js create a snapshot of the component 1`] = `
+<Fragment>
+  <div
+    className="header__margin"
+  >
+    <h1
+      className="header__title"
+    >
+      LOTTOLAND GAMES
+    </h1>
+    <div
+      className="selector__frame selector__select"
+      onClick={[Function]}
+    >
+      <p>
+        <span>
+          1   
+        </span>
+        SORT GAMES
+      </p>
+    </div>
+  </div>
+  <hr />
+</Fragment>
+`;

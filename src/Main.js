@@ -7,8 +7,8 @@ export const Main = () => {
        
     return (
         <div>
-            <Sort  setSelect={setSelect} />
-            <Games  select={select} />            
+            <Sort  setSelect={setSelect} select={select}/>
+            {<Games  select={select} /> }           
         </div>
     )
 }
