@@ -9,7 +9,7 @@ export const Main = () => {
        to display the games list in the selected order */
     return (
         <>
-            <Head  setSelect={setSelect} select={select}/>,
+            <Head  setSelect={setSelect} select={select}/>
             <Games  select={select} />          
         </>
     )
