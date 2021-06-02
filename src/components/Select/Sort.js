@@ -19,15 +19,15 @@ export const Sort = ({setSelect, select, handleOptionlist}) => {
 				<div className="selector__optionbox">
 
 					<label>
-						<input checked={select==="name"?true:false} type="radio" name="inputradio" value="name" autoFocus={true}/>
+						<input defaultChecked={select==="name"?true:false} type="radio" name="inputradio" value="name" autoFocus={true}/>
 						Name (A-Z)
 					<i></i></label><br/>
 					<label>
-						<input checked={select==="stakemin"?true:false} type="radio" id="test2" name="inputradio" value="stakemin" />
+						<input defaultChecked={select==="stakemin"?true:false} type="radio" id="test2" name="inputradio" value="stakemin" />
 						Stake (min to max)
 					<i></i></label><br/>
 					<label>
-						<input checked={select==="stakemax"?true:false} type="radio" id="test3" name="inputradio" value="stakemax" />
+						<input defaultChecked={select==="stakemax"?true:false} type="radio" id="test3" name="inputradio" value="stakemax" />
 						Stake (max to min)
 					<i></i></label>
 					

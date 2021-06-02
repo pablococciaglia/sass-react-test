@@ -25,7 +25,7 @@
 .selector__option p{
     font-family: "Daxline Pro 900";
     cursor: pointer;
-    margin-top: -0.5px;
+    margin-top: -2px;
     color:$color-ui-casino-02;
 }
 
@@ -50,14 +50,14 @@
 }
 
 .selector__optionbox{
-padding-top:5px;
-padding-left:20px;
-padding-right:40px;
-padding-bottom:20px;
+    padding-top:5px;
+    padding-left:20px;
+    padding-right:40px;
+    padding-bottom:20px;
 }
 
 .selector__option{
-    top: 60px;
+    top: 60.2px;
     z-index:1;
     position:absolute;
     flex-direction: row;
@@ -65,11 +65,6 @@ padding-bottom:20px;
     padding: 5px 16px;
     background: $color-casino-base;
     border-radius: 4px;
-
-.selector__option p{
-        cursor: pointer;
-        margin-top: -0.5px;
-    }
     
     [type="radio"]:checked,
     [type="radio"]:not(:checked) {
