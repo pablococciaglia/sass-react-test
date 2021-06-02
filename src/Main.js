@@ -15,5 +15,5 @@ export const Main = () => {
     )
     /* render the 2 main components of the site
     Head: where is the title and the selector
-    Games: where is rendered the list of components */
+    Games: where is rendered the list of components */ 
 }
