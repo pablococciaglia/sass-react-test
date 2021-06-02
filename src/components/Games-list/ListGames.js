@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const ListGames = ({games}) => {
-    return (
+    return ( //function .map to set the each list item with the info from the .json
         <>
             {games.map((game) =>
                 

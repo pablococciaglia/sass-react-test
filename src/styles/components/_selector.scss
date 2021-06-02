@@ -1,16 +1,3 @@
-
-
-.selector__select p{
-    font-family: "Daxline Pro 700";
-    color:$color-ui-casino-02;
-    font-size: 14px;
-    
-}
-
-.selector__select span{
-    font-family: "ll-icon-font";
-}
-
 .selector__frame{
     cursor: pointer;
     display: flex;
@@ -22,10 +9,53 @@
     background: $color-casino-base;
     border-radius: 4px;
 }
+
+.selector__frame p{
+    font-family: "Daxline Pro 900";
+    color:$color-ui-casino-02;
+}
+
+.selector__frame span{
+    padding-right: 10px;
+    cursor: pointer;
+    font-family: "ll-icon-font";
+    color:$color-ui-casino-02;
+}
+
 .selector__option p{
+    font-family: "Daxline Pro 900";
     cursor: pointer;
     margin-top: -0.5px;
+    color:$color-ui-casino-02;
 }
+
+.selector__option span{
+    padding-right: 10px;
+    font-family: "ll-icon-font";
+    cursor: pointer;
+    color:$color-ui-casino-02;
+}
+
+.selector__option label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    font-family: "Daxline Pro 200";    
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: $color-ui-casino-02;
+}
+
+.selector__optionbox{
+padding-top:5px;
+padding-left:20px;
+padding-right:40px;
+padding-bottom:20px;
+}
+
 .selector__option{
     top: 60px;
     z-index:1;
@@ -35,56 +65,50 @@
     padding: 5px 16px;
     background: $color-casino-base;
     border-radius: 4px;
-   
+
+.selector__option p{
+        cursor: pointer;
+        margin-top: -0.5px;
+    }
     
     [type="radio"]:checked,
     [type="radio"]:not(:checked) {
         position: absolute;
         left: -9999px;
     }
-    [type="radio"]:checked + label,
-    [type="radio"]:not(:checked) + label
-    {
-        margin-bottom: 7px;
-        font-family: "Daxline Pro 400";    
-        position: relative;
-        padding-left: 28px;
-        cursor: pointer;
-        line-height: 20px;
-        display: inline-block;
-        color: $color-ui-casino-02;
-    }
-    [type="radio"]:checked + label:before,
-    [type="radio"]:not(:checked) + label:before {
+    [type="radio"]:checked + i:before,
+    [type="radio"]:not(:checked) + i:before {
+        margin-top: 1px;
         content: '';
         position: absolute;
         left: 0;
         top: 0;
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         border: 1px solid #44495A;
         border-radius: 100%;
         background:transparent;
     }
-    [type="radio"]:checked + label:after,
-    [type="radio"]:not(:checked) + label:after {
+    [type="radio"]:checked + i:after,
+    [type="radio"]:not(:checked) + i:after {
+        margin-top: 1px;
         content: '';
         width: 12px;
         height: 12px;
         background: $color-casino-complimentary;
         position: absolute;
-        top: 4px;
-        left: 4px;
+        top: 5px;
+        left: 5px;
         border-radius: 100%;
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
-    [type="radio"]:not(:checked) + label:after {
+    [type="radio"]:not(:checked) + i:after {
         opacity: 0;
         -webkit-transform: scale(0);
         transform: scale(0);
     }
-    [type="radio"]:checked + label:after {
+    [type="radio"]:checked + i:after {
         opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1);

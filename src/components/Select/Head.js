@@ -2,15 +2,21 @@ import React, { useState } from 'react'
 import { Sort } from './Sort'
 
 export const Head = ({setSelect, select}) => {
+
     const [optionlist, setoptionlist] = useState(false)
-    
+    //useState: to handle the mount and unmount of the 'Sort' component by true or false
+
     const handleOptionlist = ()=>{
+    //if 'optionlist' is false the Sort component wont be displayed
         if (optionlist===false){
             setoptionlist(!optionlist)
+            
         }else{
+            //setTimeout to delay the unmounting of the Sort component to appreciate the visual effect when you chose some option
             setTimeout(() => {
                 setoptionlist(!optionlist)
             }, 250);
+
         }
     }
     

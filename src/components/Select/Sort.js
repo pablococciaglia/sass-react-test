@@ -1,57 +1,38 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 
-export const Sort = ({setSelect, select}) => {
-	const inputRef = useRef();
+export const Sort = ({setSelect, select, handleOptionlist}) => {
 
-	const handleOptionChange = changeEvent => {
-		setSelect (changeEvent.target.value);
+	const handleOptionChange = e => { //save the value on select by setSelect
+		setSelect (e.target.value);
 	}; 
 
-	const [showOptions, setshowOptions] = useState(false);
- 	
-	const spreadoptionlist =()=>{
-		if(showOptions===false){
-			
-			setTimeout(() => {
-				inputRef.current.focus();
-			}, 0);
-			
-			setshowOptions(!showOptions);
-			
-		}else{
-			setTimeout(() => {
-				setshowOptions(!showOptions);
-				
-			}, 250);
-		}
-	}
-
-	return (
+	return (//onBlur and onClick will unmount the component, and onChange={handleOptionChange} will save the value by setSelect
 		<>
-	 	<div className="header__margin">
-		
-			<h1 className="header__title">LOTTOLAND GAMES</h1>
-			
-			<div onClick={spreadoptionlist} className="selector__frame selector__select">
-				<p ><span>1 &nbsp; </span>SORT GAMES</p>
-			</div>
+			<form
+				className="selector__option" 
+				onBlur={handleOptionlist} 
+				onClick={handleOptionlist} 
+				onChange={handleOptionChange} 
+			>
+				<p><span>2</span>SORT GAMES</p>
 
-			{showOptions && 
-			 	<form id="selector__option" 
-					className="selector__option selector__select" 
-					onBlur={spreadoptionlist} 
-					onClick={spreadoptionlist} 
-					onChange={handleOptionChange} 
-				>
-					<p><span>2 &nbsp; </span>SORT GAMES</p>
-					<input checked={select==="name"?true:false} type="radio" id="test1" name="inputradio" value="name" /><label for="test1" ref={inputRef}>Name (A-Z)</label><br/>
-					<input checked={select==="stakemin"?true:false} type="radio" id="test2" name="inputradio" value="stakemin" /><label for="test2">Stake (min to max)</label><br/>
-					<input checked={select==="stakemax"?true:false} type="radio" id="test3" name="inputradio" value="stakemax" /><label for="test3">Stake (max to min)</label><br/>
-				</form>
-			}
-				
-		</div>
-		<hr/>
+				<div className="selector__optionbox">
+
+					<label>
+						<input checked={select==="name"?true:false} type="radio" name="inputradio" value="name" autoFocus={true}/>
+						Name (A-Z)
+					<i></i></label><br/>
+					<label>
+						<input checked={select==="stakemin"?true:false} type="radio" id="test2" name="inputradio" value="stakemin" />
+						Stake (min to max)
+					<i></i></label><br/>
+					<label>
+						<input checked={select==="stakemax"?true:false} type="radio" id="test3" name="inputradio" value="stakemax" />
+						Stake (max to min)
+					<i></i></label>
+					
+				</div>
+			</form>
 		</>
 	)
 }

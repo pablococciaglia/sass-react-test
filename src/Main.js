@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Games } from './components/Games-list/Games'
-import { Sort } from './components/Select/Sort'
+import { Head } from './components/Select/Head'
 export const Main = () => {
    
     const [select, setSelect] = useState(null)
        
     return (
         <div>
-            <Sort  setSelect={setSelect} select={select}/>
+            <Head  setSelect={setSelect} select={select}/>
             {<Games  select={select} /> }           
         </div>
     )
