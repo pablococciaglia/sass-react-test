@@ -2,17 +2,6 @@
     list-style:none;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap ;
-    max-width: 1280px;
-    margin: 0;
-}
-
-li{
-    flex: auto;
-}
-
 @media only screen and (max-width: 768px) {
     ul {
         margin-top: -40px;
