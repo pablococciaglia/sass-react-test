@@ -1,0 +1,46 @@
+* {
+    
+    .mt7 {
+        margin-top: 7px;
+    }
+    .mb7 {
+        margin-bottom: 7px;
+    }
+    .mr7 {
+        margin-right: 7px;
+    }
+    .ml7 {
+        margin-left: 7px;
+    }
+    
+    hr {
+        width: 95%;
+        background: $color-ui-casino-02;
+        opacity: 0.12;
+        margin-bottom: 0px;
+        
+    }
+}
+
+body{ 
+    background-image: linear-gradient( to right , $background-grey-light, $background-grey-dark);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap ;
+    max-width: 1280px;
+    margin: 0;
+}
+
+li{
+    flex: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+    }
+}
