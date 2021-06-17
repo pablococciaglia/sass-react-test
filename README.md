@@ -1,4 +1,4 @@
-# Ciklum Test || final result on branch2
+# Ciklum Test
 
 Download the Zip file and unzip it.
 
