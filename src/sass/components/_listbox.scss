@@ -1,14 +1,19 @@
-.listbox__list{
-    list-style:none;
+.listbox__list {
+	list-style: none;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 
 @media only screen and (max-width: 768px) {
-    ul {
-        margin-top: -40px;
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        margin: 0;
-        padding: 0;
-    }
+	ul {
+		margin-top: -40px;
+		display: flex;
+		flex-direction: column;
+		margin-left: -40px;
+		margin: 0;
+		padding: 0;
+	}
 }

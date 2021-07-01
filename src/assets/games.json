@@ -1,56 +1,56 @@
 [
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/ozwins_hhhiwj.jpg",
-        "company":"netent",
-        "title":"OZWINS JACKPOTS",
-        "minbet":0.50
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/aztec-gold_ga0nkt.jpg",
-        "company":"netent",
-        "title":"AZTEC GOLD",
-        "minbet":0.20
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/hot-Safari_momfsk.jpg",
-        "company":"netent",
-        "title":"HOT SAFARI",
-        "minbet":0.70
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/starbust_gdtalq.jpg",
-        "company":"netent",
-        "title":"STARBUST",
-        "minbet":0.90
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/super-joker_esuyri.jpg",
-        "company":"netent",
-        "title":"SUPER JOKER",
-        "minbet":1.10
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119846/lottoland/dr-Fortuno_u2f5ir.jpg",
-        "company":"netent",
-        "title":"DR. FORTUNO",
-        "minbet":0.10
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/jokers-riches_szctsd.jpg",
-        "company":"netent",
-        "title":"JOCKER´S RICHES",
-        "minbet":2.20
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119848/lottoland/egyptian-king_sbn3mq.jpg",
-        "company":"netent",
-        "title":"EGYPTIAN KING",
-        "minbet":1.00
-    },
-    {
-        "url":"https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/pirates-plenty_ltxr12.jpg",
-        "company":"netent",
-        "title":"PIRATES´ PLENTY",
-        "minbet":1.60
-    }
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/ozwins_hhhiwj.jpg",
+		"company": "netent",
+		"title": "OZWINS JACKPOTS",
+		"minbet": 0.5
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/aztec-gold_ga0nkt.jpg",
+		"company": "netent",
+		"title": "AZTEC GOLD",
+		"minbet": 0.2
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/hot-Safari_momfsk.jpg",
+		"company": "netent",
+		"title": "HOT SAFARI",
+		"minbet": 0.7
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/starbust_gdtalq.jpg",
+		"company": "netent",
+		"title": "STARBUST",
+		"minbet": 0.9
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/super-joker_esuyri.jpg",
+		"company": "netent",
+		"title": "SUPER JOKER",
+		"minbet": 1.1
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119846/lottoland/dr-Fortuno_u2f5ir.jpg",
+		"company": "netent",
+		"title": "DR. FORTUNO",
+		"minbet": 0.1
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/jokers-riches_szctsd.jpg",
+		"company": "netent",
+		"title": "JOCKER´S RICHES",
+		"minbet": 2.2
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119848/lottoland/egyptian-king_sbn3mq.jpg",
+		"company": "netent",
+		"title": "EGYPTIAN KING",
+		"minbet": 1.0
+	},
+	{
+		"url": "https://res.cloudinary.com/dg0as7cgt/image/upload/v1622119847/lottoland/pirates-plenty_ltxr12.jpg",
+		"company": "netent",
+		"title": "PIRATES´ PLENTY",
+		"minbet": 1.6
+	}
 ]

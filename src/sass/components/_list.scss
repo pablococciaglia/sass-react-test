@@ -1,132 +1,148 @@
-.list{
-    &__flexcontainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
+.list {
+	&__flexcontainer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 
-    &__background{
-    cursor: pointer;
-    min-width: 426px;
-    max-width: 540px;
-    height: 138px;
-    border-radius: 6px;
-    }
+	&__background {
+		cursor: pointer;
+		height: 138px;
+		border-radius: 6px;
+	}
 
-    &__background:hover{
-    transition: 0.2s;
-    cursor: pointer;
-    background-color: rgba($color-casino-base,0.5);
-    height: 138px;
-    border-radius: 6px;
-    .list__button{display: inline;};
-    .list__textinfo{visibility: visible;}
-    }
+	&__background:hover {
+		transition: 0.2s;
+		cursor: pointer;
+		background-color: rgba($color-casino-base, 0.5);
+		height: 138px;
+		border-radius: 6px;
+		.list__button {
+			display: inline;
+		}
+		.list__textinfo {
+			visibility: visible;
+		}
+	}
 
-    &__texttitle{
-    color: $color-ui-casino-02;
-    font-family: "Daxline Pro 700";
-    font-style: normal;
-    font-size: 17px;
-    line-height: 21px;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 2px 0px;
-    }
+	&__texttitle {
+		color: $color-ui-casino-02;
+		font-family: 'Daxline Pro 700';
+		font-style: normal;
+		font-size: 17px;
+		line-height: 21px;
+		text-transform: uppercase;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		flex: none;
+		order: 1;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 2px 0px;
+	}
 
-    &__textsbox{
-    margin-left: 14px;
-    }
+	&__textsbox {
+		margin-left: 14px;
+	}
 
-    &__textcompany{
-    font-family: "Daxline Pro 500";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: $color-ui-casino-03;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 2px 0px;
-    }
+	&__textcompany {
+		font-family: 'Daxline Pro 500';
+		font-style: normal;
+		font-size: 14px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: $color-ui-casino-03;
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 2px 0px;
+	}
 
-    &__textstake{
-    font-family: "Daxline Pro 500";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: $color-ui-casino-03;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 2px 0px;
-    }
+	&__textstake {
+		font-family: 'Daxline Pro 500';
+		font-style: normal;
+		font-size: 14px;
+		line-height: 21px;
+		display: flex;
+		align-items: center;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: $color-ui-casino-03;
+		flex: none;
+		order: 2;
+		align-self: stretch;
+		flex-grow: 0;
+		margin: 2px 0px;
+	}
 
-    &__img{
-    margin-left: 14px;
-    width : 132px;
-    height : 96px;
-    border-radius : 5px;    
-    background: linear-gradient(180deg, rgba(26, 23, 30, 0.64) 0%, rgba(26, 23, 30, 0) 24.98%, rgba(26, 23, 30, 0) 74.94%, rgba(26, 23, 30, 0.64) 100%);
-    }
+	&__img {
+		margin-left: 14px;
+		width: 132px;
+		height: 96px;
+		border-radius: 5px;
+		background: linear-gradient(
+			180deg,
+			rgba(26, 23, 30, 0.64) 0%,
+			rgba(26, 23, 30, 0) 24.98%,
+			rgba(26, 23, 30, 0) 74.94%,
+			rgba(26, 23, 30, 0.64) 100%
+		);
+	}
 
+	&__button {
+		margin-left: auto;
+		margin-right: 14px;
+		display: none;
+		transition: 0.2s;
+		cursor: pointer;
+		text-decoration: none;
+		height: 40px;
+		width: 64px;
+		font-family: 'Daxline Pro 900';
+		font-size: 14px;
+		color: $color-ui-casino-01;
+		background-image: linear-gradient(
+			to right,
+			$button-green-light,
+			$button-green-dark
+		);
+		border: none;
+		border-radius: 4px;
+	}
 
-    &__button{
-    margin-left: auto;
-    margin-right: 14px;
-    display: none; 
-    transition: 0.2s;
-    cursor: pointer;
-    text-decoration: none;
-    height: 40px;
-    width: 64px;
-    font-family: "Daxline Pro 900";
-    font-size: 14px;
-    color: $color-ui-casino-01;
-    background-image: linear-gradient( to right , $button-green-light, $button-green-dark);
-    border: none;
-    border-radius: 4px;
-    }
+	&__button:hover {
+		transition: 0.2s;
+		font-size: larger;
+	}
 
-    &__button:hover{
-    transition: 0.2s;
-    font-size: larger;
-    }
-
-    &__textinfo{
-    visibility: hidden;
-    display: none;
-    position: absolute;
-    margin-left: 20px;
-    margin-top: -34px;
-    font-family: "ll-icon-font";
-    font-size: 20px;
-    color: $color-ui-casino-01;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    }
+	&__textinfo {
+		visibility: hidden;
+		display: none;
+		position: absolute;
+		margin-left: 20px;
+		margin-top: -34px;
+		font-family: 'll-icon-font';
+		font-size: 20px;
+		color: $color-ui-casino-01;
+		line-height: 22px;
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .list{
-        &__button{display: inline;};
-        &__textinfo{visibility: visible;};
-        &__background:hover{background-color:transparent; 
-        }
-    }
+	.list {
+		&__button {
+			display: inline;
+		}
+		&__textinfo {
+			visibility: visible;
+		}
+		&__background:hover {
+			background-color: transparent;
+		}
+	}
 }
